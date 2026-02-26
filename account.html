@@ -229,8 +229,6 @@
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
     <!-- Favicons -->
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
@@ -244,6 +242,8 @@
     <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
     <!-- Mickidum Accessibility Toolbar -->
     <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="/styles.css">
 
     <style id="zappy-dropdown-submenu-styles">
@@ -390,7 +390,7 @@
                   <circle cx="12" cy="7" r="4"/>
                 </svg>
               </div>
-              <h1>אננס קפוא</h1>
+              <h1>לא מחובר</h1>
               <p>יש להתחבר כדי לצפות בחשבון</p>
               <a href="/login" class="btn btn-primary">התחברות</a>
             </div>
@@ -453,6 +453,19 @@
                     <p>אין כתובות שמורות</p>
                   </div>
                 </div>
+              </div>
+              
+              <!-- Favorites Section -->
+              <div class="favorites-section">
+                <h2>המועדפים שלי</h2>
+                <div class="favorites-loading" id="favorites-loading">
+                  <div class="loading-spinner"></div>
+                </div>
+                <div class="favorites-empty" id="favorites-empty" style="display: none;">
+                  <p>אין עדיין מוצרים מועדפים</p>
+                  <a href="/products" class="btn btn-primary btn-sm">גלו את כל המוצרים שלנו</a>
+                </div>
+                <div class="favorites-grid" id="favorites-grid" style="display: none;"></div>
               </div>
               
               <!-- Orders Section -->
@@ -623,7 +636,6 @@
     }
   })();
   </script>
-    <div data-integration="accessibility:toolbar"></div>
 
     <script src="/script.js"></script>
 
