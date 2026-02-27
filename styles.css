@@ -8639,16 +8639,34 @@ body.accessibility-widget-visible ._access-menu {
 }
 /* === NAVBAR STYLE OVERRIDES START === */
 .navbar { background-color: #F4F6F7 !important; }
-.navbar a, .navbar .nav-link, .navbar .navbar-nav .nav-link { color: #0F1112 !important; }
-.navbar a:hover, .navbar .nav-link:hover, .navbar .navbar-nav .nav-link:hover { color: #2E4A55 !important; }
+.navbar .nav-menu > li > a,
+.navbar .nav-menu > .nav-item > a,
+.navbar .nav-link,
+.navbar .navbar-nav .nav-link,
+.navbar a { color: #0F1112 !important; }
+.navbar .nav-menu > li > a:hover,
+.navbar .nav-menu > .nav-item > a:hover,
+.navbar .nav-link:hover,
+.navbar a:hover { color: #2E4A55 !important; }
 .navbar .navbar-brand, .navbar .navbar-brand a { color: #0F1112 !important; }
+.navbar .dropdown-toggle { color: #0F1112 !important; }
+.navbar .dropdown-toggle:hover { color: #2E4A55 !important; }
+.navbar .mobile-hamburger-btn, .navbar .mobile-close-btn { color: #0F1112 !important; }
 .navbar-toggler { color: #0F1112 !important; border-color: #0F111244 !important; }
 .navbar-toggler-icon { background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%230F1112' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important; }
-.dropdown-menu { background-color: #F4F6F7 !important; }
-.dropdown-menu a, .dropdown-menu .dropdown-item { color: #0F1112 !important; }
-.dropdown-menu a:hover, .dropdown-menu .dropdown-item:hover { color: #2E4A55 !important; background-color: rgba(128,128,128,0.1) !important; }
+.navbar .dropdown-menu { background-color: #F4F6F7 !important; }
+.navbar .dropdown-menu li a,
+.navbar .dropdown-menu .dropdown-item { color: #0F1112 !important; }
+.navbar .dropdown-menu li a:hover,
+.navbar .dropdown-menu .dropdown-item:hover { color: #2E4A55 !important; background-color: rgba(128,128,128,0.1) !important; }
+.navbar .sub-menu a,
+.navbar .nav-menu .sub-menu a,
+.navbar .zappy-products-dropdown .sub-menu a { color: #0F1112 !important; }
+.navbar .sub-menu a:hover { color: #2E4A55 !important; }
+.navbar .mobile-submenu-toggle { color: #0F1112 !important; }
 .navbar .cart-icon, .navbar .login-icon, .navbar .search-toggle { color: #0F1112 !important; }
 .navbar .cart-icon:hover, .navbar .login-icon:hover, .navbar .search-toggle:hover { color: #2E4A55 !important; }
+.navbar .phone-header-btn { color: #0F1112 !important; }
 /* === NAVBAR STYLE OVERRIDES END === */
 
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
