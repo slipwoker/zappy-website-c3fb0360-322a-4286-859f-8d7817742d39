@@ -8676,7 +8676,7 @@ body.accessibility-widget-visible ._access-menu {
   .nav-menu .dropdown-menu a:hover { color: #2E4A55 !important; }
   .nav-menu .sub-menu a { color: #0F1112 !important; }
   .nav-menu .sub-menu a:hover { color: #2E4A55 !important; }
-  .mobile-submenu-toggle { color: #0F1112 !important; }
+  .mobile-submenu-toggle { color: #0F1112 !important; top: 50% !important; transform: translateY(-50%) !important; }
   .mobile-toggle { color: #0F1112 !important; }
   .mobile-toggle svg { color: inherit !important; }
   .mobile-toggle svg path { stroke: currentColor !important; }
@@ -8698,7 +8698,10 @@ body.accessibility-widget-visible ._access-menu {
   }
   .navbar .zappy-products-dropdown.open .sub-menu,
   .navbar .zappy-products-dropdown.open > .sub-menu,
+  .navbar .zappy-products-dropdown .sub-menu.mobile-expanded,
+  .navbar .zappy-products-dropdown > .sub-menu.mobile-expanded,
   .navbar .menu-item-has-children.open > .sub-menu,
+  .navbar .menu-item-has-children > .sub-menu.mobile-expanded,
   .navbar .nav-dropdown.open > .dropdown-menu {
     display: block !important; opacity: 1 !important; visibility: visible !important;
     max-height: 500px !important; pointer-events: auto !important; position: static !important;
