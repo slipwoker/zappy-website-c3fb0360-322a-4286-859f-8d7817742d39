@@ -8667,6 +8667,17 @@ body.accessibility-widget-visible ._access-menu {
 .navbar .cart-icon, .navbar .login-icon, .navbar .search-toggle { color: #0F1112 !important; }
 .navbar .cart-icon:hover, .navbar .login-icon:hover, .navbar .search-toggle:hover { color: #2E4A55 !important; }
 .navbar .phone-header-btn { color: #0F1112 !important; }
+@media (max-width: 768px) {
+  .nav-menu, .nav-menu.active { background-color: #F4F6F7 !important; }
+  .nav-menu a, .nav-menu > li > a { color: #0F1112 !important; }
+  .nav-menu a:hover, .nav-menu > li > a:hover { color: #2E4A55 !important; }
+  .nav-menu .dropdown-menu { background: rgba(128,128,128,0.06) !important; }
+  .nav-menu .dropdown-menu a, .nav-menu .dropdown-menu li a { color: #0F1112 !important; }
+  .nav-menu .dropdown-menu a:hover { color: #2E4A55 !important; }
+  .nav-menu .sub-menu a { color: #0F1112 !important; }
+  .nav-menu .sub-menu a:hover { color: #2E4A55 !important; }
+  .mobile-submenu-toggle { color: #0F1112 !important; }
+}
 /* === NAVBAR STYLE OVERRIDES END === */
 
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
