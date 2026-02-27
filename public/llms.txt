@@ -22,7 +22,7 @@ https://example.com/contact
 
 ### Products
 https://example.com/products
-המוצרים שלנו - אננס קפוא
+המוצרים שלנו - אסיה-פה
 
 ### Cart
 https://example.com/cart
@@ -46,11 +46,11 @@ https://example.com/order-success
 
 ### Product Detail
 https://example.com/product/:slug
-פרטי המוצר - אננס קפוא
+פרטי המוצר - אסיה-פה
 
 ### Category
 https://example.com/category/:slug
-מוצרים - אננס קפוא
+מוצרים - אסיה-פה
 
 ## Legal & Policy
 
