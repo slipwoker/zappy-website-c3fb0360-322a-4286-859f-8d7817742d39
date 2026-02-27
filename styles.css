@@ -8667,6 +8667,14 @@ body.accessibility-widget-visible ._access-menu {
 .navbar .cart-icon, .navbar .login-icon, .navbar .search-toggle { color: #0F1112 !important; }
 .navbar .cart-icon:hover, .navbar .login-icon:hover, .navbar .search-toggle:hover { color: #2E4A55 !important; }
 .navbar .phone-header-btn { color: #0F1112 !important; }
+.navbar .nav-search-input { color: #FFFFFF !important; }
+.navbar .nav-search-input::placeholder { color: rgba(128,128,128,0.6) !important; }
+.navbar .nav-search-results,
+.navbar #nav-search-results { background: #0F1112 !important; border-color: rgba(128,128,128,0.2) !important; }
+.navbar .nav-search-result-name { color: #FFFFFF !important; }
+.navbar .nav-search-result-item a { color: #FFFFFF !important; }
+.navbar .nav-search-result-price { color: var(--primary) !important; }
+.navbar .nav-search-no-results { color: rgba(128,128,128,0.6) !important; }
 @media (max-width: 768px) {
   .nav-menu, .nav-menu.active { background-color: #F4F6F7 !important; }
   .nav-menu a, .nav-menu > li > a { color: #0F1112 !important; }
