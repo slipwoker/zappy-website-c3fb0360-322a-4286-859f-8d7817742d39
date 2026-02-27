@@ -8677,6 +8677,33 @@ body.accessibility-widget-visible ._access-menu {
   .nav-menu .sub-menu a { color: #0F1112 !important; }
   .nav-menu .sub-menu a:hover { color: #2E4A55 !important; }
   .mobile-submenu-toggle { color: #0F1112 !important; }
+  .mobile-toggle { color: #0F1112 !important; }
+  .mobile-toggle svg { color: inherit !important; }
+  .mobile-toggle svg path { stroke: currentColor !important; }
+  .navbar .zappy-products-dropdown .sub-menu,
+  .navbar .zappy-products-dropdown > .sub-menu {
+    display: none !important; position: static !important; max-height: 0 !important;
+    overflow: hidden !important; opacity: 0 !important; visibility: hidden !important;
+    pointer-events: none !important; box-shadow: none !important; border: none !important;
+    padding: 0 !important; transform: none !important;
+  }
+  .navbar .zappy-products-dropdown:hover .sub-menu,
+  .navbar .zappy-products-dropdown:hover > .sub-menu,
+  .navbar .zappy-products-dropdown:focus-within .sub-menu,
+  .navbar .zappy-products-dropdown:focus-within > .sub-menu,
+  .navbar .menu-item-has-children:hover > .sub-menu,
+  .navbar .nav-dropdown:hover > .dropdown-menu {
+    display: none !important; opacity: 0 !important; visibility: hidden !important;
+    max-height: 0 !important; pointer-events: none !important;
+  }
+  .navbar .zappy-products-dropdown.open .sub-menu,
+  .navbar .zappy-products-dropdown.open > .sub-menu,
+  .navbar .menu-item-has-children.open > .sub-menu,
+  .navbar .nav-dropdown.open > .dropdown-menu {
+    display: block !important; opacity: 1 !important; visibility: visible !important;
+    max-height: 500px !important; pointer-events: auto !important; position: static !important;
+    overflow: visible !important; padding: 0.5rem 0 !important;
+  }
 }
 /* === NAVBAR STYLE OVERRIDES END === */
 
