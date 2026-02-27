@@ -8667,12 +8667,10 @@ body.accessibility-widget-visible ._access-menu {
 .navbar .cart-icon, .navbar .login-icon, .navbar .search-toggle { color: #0F1112 !important; }
 .navbar .cart-icon:hover, .navbar .login-icon:hover, .navbar .search-toggle:hover { color: #2E4A55 !important; }
 .navbar .phone-header-btn { color: #0F1112 !important; }
-.navbar .nav-search-input { color: var(--text) !important; }
+.navbar .nav-search-input { color: var(--nav-text, var(--text-dark, var(--text, #333))) !important; }
 .navbar .nav-search-input::placeholder { color: var(--text-muted, rgba(128,128,128,0.6)) !important; }
-.navbar .nav-search-results.active,
-.navbar #nav-search-results.active { color: var(--text) !important; }
-.navbar .nav-search-result-name { color: var(--text) !important; }
-.navbar .nav-search-result-item a { color: var(--text) !important; }
+.navbar .nav-search-result-name { color: var(--text-dark, var(--text, var(--nav-text, #333))) !important; }
+.navbar .nav-search-result-item a { color: var(--text-dark, var(--text, var(--nav-text, #333))) !important; }
 .navbar .nav-search-result-price { color: var(--primary) !important; }
 .navbar .nav-search-no-results,
 .navbar .search-no-results { color: var(--text-muted, rgba(128,128,128,0.6)) !important; }
