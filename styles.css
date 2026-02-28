@@ -8666,15 +8666,27 @@ body.accessibility-widget-visible ._access-menu {
 .navbar .mobile-submenu-toggle { color: #FFFFFF !important; }
 .navbar .cart-icon, .navbar .login-icon, .navbar .search-toggle { color: #FFFFFF !important; }
 .navbar .cart-icon:hover, .navbar .login-icon:hover, .navbar .search-toggle:hover { color: #48646f !important; }
+.navbar .cart-link.nav-cart,
+.navbar .login-link.nav-login,
+.navbar .nav-search-toggle { color: #FFFFFF !important; }
+.navbar .cart-link.nav-cart:hover,
+.navbar .login-link.nav-login:hover,
+.navbar .nav-search-toggle:hover { color: #48646f !important; }
+.navbar .cart-link svg, .navbar .login-link svg, .navbar .nav-search-toggle svg { color: inherit !important; }
 .navbar .phone-header-btn { color: #FFFFFF !important; }
 .navbar .nav-search-input,
-.navbar .nav-search-box .nav-search-input { color: var(--nav-text, var(--text-dark, var(--text, #333))) !important; }
+.navbar .nav-search-box .nav-search-input { color: #333333 !important; }
 .navbar .nav-search-input::placeholder { color: var(--text-muted, rgba(128,128,128,0.6)) !important; }
-.navbar .nav-search-result-name { color: var(--text-dark, var(--text, var(--nav-text, #333))) !important; }
-.navbar .nav-search-result-item a { color: var(--text-dark, var(--text, var(--nav-text, #333))) !important; }
+.navbar .nav-search-result-name { color: #333333 !important; }
+.navbar .nav-search-result-item a { color: #333333 !important; }
 .navbar .nav-search-result-price { color: var(--primary) !important; }
 .navbar .nav-search-no-results,
 .navbar .search-no-results { color: var(--text-muted, rgba(128,128,128,0.6)) !important; }
+.zappy-catalog-menu { background-color: #0F1112 !important; }
+.zappy-catalog-menu .catalog-menu-item,
+.zappy-catalog-menu .catalog-menu-all { color: #FFFFFF !important; }
+.zappy-catalog-menu .catalog-menu-item:hover,
+.zappy-catalog-menu .catalog-menu-all:hover { color: #48646f !important; background: rgba(128,128,128,0.1) !important; }
 @media (max-width: 768px) {
   .nav-menu, .nav-menu.active { background-color: #0F1112 !important; }
   .nav-menu a, .nav-menu > li > a { color: #FFFFFF !important; }
