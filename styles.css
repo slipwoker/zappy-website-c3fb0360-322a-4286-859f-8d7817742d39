@@ -8682,7 +8682,7 @@ body.accessibility-widget-visible ._access-menu {
 .navbar .nav-search-result-price { color: var(--primary) !important; }
 .navbar .nav-search-no-results,
 .navbar .search-no-results { color: var(--text-muted, rgba(128,128,128,0.6)) !important; }
-.zappy-catalog-menu { background-color: #0F1112 !important; }
+.zappy-catalog-menu { background-color: transparent !important; }
 .zappy-catalog-menu .catalog-menu-item,
 .zappy-catalog-menu .catalog-menu-all { color: #FFFFFF !important; }
 .zappy-catalog-menu .catalog-menu-item:hover,
