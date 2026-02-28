@@ -8689,6 +8689,7 @@ body.accessibility-widget-visible ._access-menu {
 .zappy-catalog-menu .catalog-menu-item:hover,
 .zappy-catalog-menu .catalog-menu-all:hover { color: #48646f !important; background: rgba(128,128,128,0.1) !important; }
 @media (max-width: 768px) {
+  .navbar { background-color: #0F1112 !important; }
   .nav-menu, .nav-menu.active { background-color: #0F1112 !important; }
   .nav-menu a, .nav-menu > li > a { color: #FFFFFF !important; }
   .nav-menu a:hover, .nav-menu > li > a:hover { color: #48646f !important; }
@@ -8701,6 +8702,10 @@ body.accessibility-widget-visible ._access-menu {
   .mobile-toggle { color: #FFFFFF !important; }
   .mobile-toggle svg { color: inherit !important; }
   .mobile-toggle svg path { stroke: currentColor !important; }
+  .mobile-search-panel .close-search { color: #333333 !important; }
+  .mobile-search-panel .close-search svg { stroke: #333333 !important; color: #333333 !important; }
+  .mobile-search-panel .close-search:hover { color: #333333 !important; }
+  .mobile-search-panel .close-search:hover svg { stroke: #333333 !important; color: #333333 !important; }
   .navbar .zappy-products-dropdown .sub-menu,
   .navbar .zappy-products-dropdown > .sub-menu {
     display: none !important; position: static !important; max-height: 0 !important;
