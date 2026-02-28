@@ -8638,7 +8638,8 @@ body.accessibility-widget-visible ._access-menu {
   }
 }
 /* === NAVBAR STYLE OVERRIDES START === */
-.navbar { background-color: transparent !important; }
+.navbar { background-color: transparent !important; transition: background 0.3s ease, backdrop-filter 0.3s ease, -webkit-backdrop-filter 0.3s ease, box-shadow 0.3s ease !important; }
+.zappy-catalog-menu, #zappy-catalog-menu { transition: background 0.3s ease, backdrop-filter 0.3s ease, -webkit-backdrop-filter 0.3s ease !important;}
 .navbar .nav-menu > li > a,
 .navbar .nav-menu > .nav-item > a,
 .navbar .nav-link,
