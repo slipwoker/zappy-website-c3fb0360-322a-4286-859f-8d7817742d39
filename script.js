@@ -7130,7 +7130,7 @@ async function loadRelatedProducts(currentProduct, t) {
 
       var wid = 'c3fb0360-322a-4286-859f-8d7817742d39';
 
-      var apiBase = (window.ZAPPY_API_BASE || window.location.origin).replace(/\/$/,'');
+      var apiBase = (window.ZAPPY_API_BASE || 'http://localhost:5001').replace(/\/$/,'');
       apiBase = apiBase + '/api/email/contact-form';
 
       fetch(apiBase, {
