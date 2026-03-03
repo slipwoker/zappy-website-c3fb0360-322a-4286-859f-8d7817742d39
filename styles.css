@@ -170,7 +170,7 @@
   --border-radius: 8px;
   --transition: all 0.3s ease;
   --nav-bg: transparent;
-  --nav-text: #66FF66;
+  --nav-text: #FFFBC0;
   --nav-text-hover: #2E4A55;
 }
 
@@ -5215,20 +5215,20 @@ body.accessibility-widget-visible ._access-menu {
 .navbar .nav-menu > .nav-item > a,
 .navbar .nav-link,
 .navbar .navbar-nav .nav-link,
-.navbar a { color: #66FF66 !important; }
+.navbar a { color: #FFFBC0 !important; }
 .navbar .nav-menu > li > a:hover,
 .navbar .nav-menu > .nav-item > a:hover,
 .navbar .nav-link:hover,
 .navbar a:hover { color: #2E4A55 !important; }
-.navbar .navbar-brand, .navbar .navbar-brand a { color: #66FF66 !important; }
-.navbar .dropdown-toggle { color: #66FF66 !important; }
+.navbar .navbar-brand, .navbar .navbar-brand a { color: #FFFBC0 !important; }
+.navbar .dropdown-toggle { color: #FFFBC0 !important; }
 .navbar .dropdown-toggle:hover { color: #2E4A55 !important; }
-.navbar .mobile-hamburger-btn, .navbar .mobile-close-btn { color: #66FF66 !important; }
-.navbar-toggler { color: #66FF66 !important; border-color: #66FF6644 !important; }
-.navbar-toggler-icon { background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%2366FF66' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important; }
+.navbar .mobile-hamburger-btn, .navbar .mobile-close-btn { color: #FFFBC0 !important; }
+.navbar-toggler { color: #FFFBC0 !important; border-color: #FFFBC044 !important; }
+.navbar-toggler-icon { background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23FFFBC0' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important; }
 .navbar .dropdown-menu { background-color: #0F1112 !important; }
 .navbar .dropdown-menu li a,
-.navbar .dropdown-menu .dropdown-item { color: #66FF66 !important; }
+.navbar .dropdown-menu .dropdown-item { color: #FFFBC0 !important; }
 .navbar .dropdown-menu li a:hover,
 .navbar .dropdown-menu .dropdown-item:hover { color: #2E4A55 !important; background-color: rgba(128,128,128,0.1) !important; }
 .navbar .sub-menu,
@@ -5239,12 +5239,12 @@ nav.navbar .sub-menu { background-color: #0F1112 !important; }
 .navbar .nav-menu .sub-menu a,
 .navbar .nav-menu .sub-menu li a,
 .navbar .zappy-products-dropdown .sub-menu a,
-nav.navbar .sub-menu li a { color: #66FF66 !important; }
+nav.navbar .sub-menu li a { color: #FFFBC0 !important; }
 .navbar .sub-menu a:hover,
 .navbar .sub-menu li a:hover,
 nav.navbar .sub-menu li a:hover { color: #2E4A55 !important; background-color: rgba(128,128,128,0.1) !important; }
-.navbar .mobile-submenu-toggle { color: #66FF66 !important; }
-.navbar .phone-header-btn { color: #66FF66 !important; }
+.navbar .mobile-submenu-toggle { color: #FFFBC0 !important; }
+.navbar .phone-header-btn { color: #FFFBC0 !important; }
 .navbar .nav-search-input,
 .navbar .nav-search-box .nav-search-input { color: #333333 !important; }
 .navbar .nav-search-input::placeholder { color: var(--text-muted, rgba(128,128,128,0.6)) !important; }
@@ -5255,7 +5255,7 @@ nav.navbar .sub-menu li a:hover { color: #2E4A55 !important; background-color: r
 .navbar .search-no-results { color: var(--text-muted, rgba(128,128,128,0.6)) !important; }
 .zappy-catalog-menu, #zappy-catalog-menu { background: transparent !important; }
 .zappy-catalog-menu .catalog-menu-item,
-.zappy-catalog-menu .catalog-menu-all { color: #66FF66 !important; }
+.zappy-catalog-menu .catalog-menu-all { color: #FFFBC0 !important; }
 .zappy-catalog-menu .catalog-menu-item:hover,
 .zappy-catalog-menu .catalog-menu-all:hover { color: #2E4A55 !important; background: rgba(128,128,128,0.1) !important; }
 .navbar .cart-link.nav-cart,
@@ -5321,7 +5321,7 @@ nav.navbar .sub-menu li a:hover { color: #2E4A55 !important; background-color: r
   .nav-menu .sub-menu a:hover { color: #2E4A55 !important; }
   .nav-menu > li { position: relative !important; }
   .navbar .nav-menu .mobile-submenu-toggle { color: #FFFFFF !important; position: static !important; height: auto !important; flex-shrink: 0 !important; align-self: stretch !important; }
-  .mobile-toggle { color: #66FF66 !important; }
+  .mobile-toggle { color: #FFFBC0 !important; }
   .mobile-toggle svg { color: inherit !important; }
   .mobile-toggle svg path { stroke: currentColor !important; }
   
