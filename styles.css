@@ -9144,12 +9144,14 @@ main,
 /* ==END ZAPPY V2 E-COMMERCE THEME CSS== */
 
 
+
+
 /* Zappy custom logo size (desktop only — mobile stays at 110px/35px) */
 @media (min-width: 769px) {
   .logo, img.logo, .logo img, .logo-link img, .nav-brand img {
     max-height: none !important;
-    height: 70px !important;
-    max-width: 280px !important;
+    height: 42px !important;
+    max-width: 166px !important;
     width: auto !important;
     object-fit: contain !important;
   }
