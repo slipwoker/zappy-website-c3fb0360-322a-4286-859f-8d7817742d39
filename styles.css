@@ -9143,12 +9143,14 @@ main,
 
 /* ==END ZAPPY V2 E-COMMERCE THEME CSS== */
 /* Zappy custom logo size (desktop only — mobile stays at 110px/35px) */
-.logo, img.logo, .logo img, .logo-link img, .nav-brand img {
-  max-height: none !important;
-  height: 61px !important;
-  max-width: 243px !important;
-  width: auto !important;
-  object-fit: contain !important;
+@media (min-width: 769px) {
+  .logo, img.logo, .logo img, .logo-link img, .nav-brand img {
+    max-height: none !important;
+    height: 55px !important;
+    max-width: 221px !important;
+    width: auto !important;
+    object-fit: contain !important;
+  }
 }
 /* /Zappy custom logo size */
 
