@@ -9150,12 +9150,14 @@ main,
 
 
 
+
+
 /* Zappy custom logo size (desktop only — mobile stays at 110px/35px) */
 @media (min-width: 769px) {
   .logo, img.logo, .logo img, .logo-link img, .nav-brand img {
-    max-height: 40px !important;
-    height: auto !important;
-    max-width: 160px !important;
+    max-height: none !important;
+    height: 54px !important;
+    max-width: 216px !important;
     width: auto !important;
     object-fit: contain !important;
   }
