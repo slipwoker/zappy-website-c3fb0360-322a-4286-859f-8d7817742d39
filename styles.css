@@ -9146,12 +9146,14 @@ main,
 
 
 
+
+
 /* Zappy custom logo size (desktop only — mobile stays at 110px/35px) */
 @media (min-width: 769px) {
   .logo, img.logo, .logo img, .logo-link img, .nav-brand img {
     max-height: none !important;
-    height: 42px !important;
-    max-width: 166px !important;
+    height: 52px !important;
+    max-width: 208px !important;
     width: auto !important;
     object-fit: contain !important;
   }
