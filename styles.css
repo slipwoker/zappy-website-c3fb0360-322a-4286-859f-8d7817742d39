@@ -172,6 +172,7 @@
   --nav-bg: transparent;
   --nav-text: #FFF899;
   --nav-text-hover: #2E4A55;
+  --nav-overlay-opacity: 0.35;
 }
 
 * {
@@ -4585,8 +4586,6 @@ img, picture, figure {
 }
 
 
-/* Logo size constraint - enforce max-height only */
-.logo, img.logo, .logo img, .logo-link img, .nav-brand img {
   max-height: 40px !important;
   height: auto !important;
   width: auto !important;
@@ -5209,8 +5208,8 @@ body.accessibility-widget-visible ._access-menu {
   }
 }
 /* === NAVBAR STYLE OVERRIDES START === */
-.navbar { background-color: transparent !important; transition: background-color 0.3s ease, backdrop-filter 0.3s ease, -webkit-backdrop-filter 0.3s ease, box-shadow 0.3s ease !important; }
-.zappy-catalog-menu, #zappy-catalog-menu { transition: background 0.3s ease, backdrop-filter 0.3s ease, -webkit-backdrop-filter 0.3s ease !important;}
+.navbar { background-color: transparent !important; background-image: linear-gradient(to bottom, rgba(0,0,0,var(--nav-overlay-opacity, 0.35)), transparent) !important; transition: background-color 0.3s ease, background-image 0.3s ease, backdrop-filter 0.3s ease, -webkit-backdrop-filter 0.3s ease, box-shadow 0.3s ease !important; }
+.zappy-catalog-menu, #zappy-catalog-menu { background-image: linear-gradient(to bottom, rgba(0,0,0,var(--nav-overlay-opacity, 0.35)), transparent) !important; transition: background 0.3s ease, background-image 0.3s ease, backdrop-filter 0.3s ease, -webkit-backdrop-filter 0.3s ease !important;}
 .navbar .nav-menu > li > a,
 .navbar .nav-menu > .nav-item > a,
 .navbar .nav-link,
@@ -5268,9 +5267,9 @@ nav.navbar .sub-menu li a:hover { color: #2E4A55 !important; background-color: r
 .navbar .search-toggle:hover { background: rgba(128,128,128,0.15) !important; color: var(--text-dark, #1a1a1a) !important; }
 .navbar .cart-link.nav-cart svg, .navbar .login-link.nav-login svg, .navbar .nav-search-toggle svg, .navbar .search-toggle svg { color: inherit !important; fill: none !important; stroke: currentColor !important; }
 
-.navbar.scrolled { background-color: rgba(244,246,247,0.85) !important; backdrop-filter: blur(12px) !important; -webkit-backdrop-filter: blur(12px) !important; box-shadow: 0 2px 16px rgba(0,0,0,0.12) !important; }
+.navbar.scrolled { background-color: rgba(244,246,247,0.85) !important; background-image: none !important; backdrop-filter: blur(12px) !important; -webkit-backdrop-filter: blur(12px) !important; box-shadow: 0 2px 16px rgba(0,0,0,0.12) !important; }
 .navbar.scrolled::before, .navbar.scrolled::after { background: transparent !important; opacity: 0 !important; }
-.navbar.scrolled ~ .zappy-catalog-menu, .navbar.scrolled ~ #zappy-catalog-menu, .zappy-catalog-menu.scrolled, #zappy-catalog-menu.scrolled { background: rgba(244,246,247,0.85) !important; backdrop-filter: blur(12px) !important; -webkit-backdrop-filter: blur(12px) !important; }
+.navbar.scrolled ~ .zappy-catalog-menu, .navbar.scrolled ~ #zappy-catalog-menu, .zappy-catalog-menu.scrolled, #zappy-catalog-menu.scrolled { background: rgba(244,246,247,0.85) !important; background-image: none !important; backdrop-filter: blur(12px) !important; -webkit-backdrop-filter: blur(12px) !important; }
 .zappy-catalog-menu.scrolled .catalog-menu-item,
 .zappy-catalog-menu.scrolled .catalog-menu-all,
 #zappy-catalog-menu.scrolled .catalog-menu-item,
@@ -5308,7 +5307,8 @@ nav.navbar .sub-menu li a:hover { color: #2E4A55 !important; background-color: r
 .navbar.scrolled .nav-search-toggle,
 .navbar.scrolled .search-toggle { background: var(--bg-light, #ffffff) !important; color: var(--text-dark, #1a1a1a) !important; }
 @media (max-width: 768px) {
-  .navbar { background-color: transparent !important; backdrop-filter: none !important; -webkit-backdrop-filter: none !important; box-shadow: none !important; }
+  .navbar { background-color: transparent !important; background-image: none !important; backdrop-filter: none !important; -webkit-backdrop-filter: none !important; box-shadow: none !important; }
+  .zappy-catalog-menu, #zappy-catalog-menu { background-image: none !important; }
   .navbar::before, .navbar::after { background: transparent !important; opacity: 0 !important; }
   body.menu-open .navbar, body.nav-open .navbar, body.mobile-menu-open .navbar, .navbar.scrolled, .navbar.active, .navbar.open, .navbar.show, .navbar.menu-open, .navbar:has(.nav-menu.active), .navbar:has(#navMenu.active), .navbar:has(.mobile-menu.active), .navbar:has(.mobile-toggle.active), .navbar:has(#mobileToggle.active) { background-color: #0F1112 !important; }
   .nav-menu, .nav-menu.active, .nav-menu.nav-menu-active, #navMenu, #navMenu.active, .mobile-menu, .mobile-menu.active, .mobile-nav, .mobile-nav.active { background-color: #0F1112 !important; background: #0F1112 !important; }
@@ -9142,6 +9142,16 @@ main,
 }
 
 /* ==END ZAPPY V2 E-COMMERCE THEME CSS== */
+/* Zappy custom logo size (desktop only — mobile stays at 110px/35px) */
+.logo, img.logo, .logo img, .logo-link img, .nav-brand img {
+  max-height: none !important;
+  height: 61px !important;
+  max-width: 243px !important;
+  width: auto !important;
+  object-fit: contain !important;
+}
+/* /Zappy custom logo size */
+
 
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
@@ -9738,3 +9748,15 @@ section[data-hero-type] {
 .variant-option.out-of-stock { opacity: 0.6; position: relative; }
 .variant-option.out-of-stock:not(.color-swatch)::after { content: ""; position: absolute; top: 50%; left: 4px; right: 4px; height: 1px; background: currentColor; transform: rotate(-12deg); pointer-events: none; }
 .variant-option.color-swatch.out-of-stock::before { content: ""; position: absolute; top: 50%; left: 2px; right: 2px; height: 1.5px; background: currentColor; transform: rotate(-45deg); pointer-events: none; z-index: 1; }
+
+
+/* ZAPPY_CONTACT_FORM_LAYOUT_FIX */
+form.contact-form, .contact-form { flex-direction: column !important; align-items: stretch !important; }
+form.contact-form > .contact-form-field, .contact-form > .contact-form-field { width: 100% !important; align-self: stretch !important; }
+form.contact-form .contact-input, form.contact-form .contact-textarea { width: 100% !important; box-sizing: border-box !important; }
+
+
+/* ZAPPY_SECTION_BG_TYPE_FIX */
+[data-zappy-bg-type="color"] { background-image: none !important; background-color: var(--zappy-bg-color, transparent) !important; }
+[data-zappy-bg-type="image"] { background-image: linear-gradient(var(--zappy-bg-overlay, rgba(0,0,0,0)), var(--zappy-bg-overlay, rgba(0,0,0,0))), var(--zappy-bg-image, none) !important; background-size: cover !important; background-position: center !important; background-repeat: no-repeat !important; }
+[data-zappy-bg-type="video"] { background-image: none !important; }
